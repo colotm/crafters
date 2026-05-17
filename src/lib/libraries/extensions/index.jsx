@@ -372,16 +372,7 @@ const menuItems = [
         description: 'Blocks for reading and creating files.',
         featured: true
     },
-    {
-        name: 'Zip',
-        extensionId: 'https://extensions.turbowarp.org/CST1229/zip.js',
-        iconURL: 'https://extensions.turbowarp.org/images/CST1229/zip.svg',
-        insetIconURL: turbowarpIcon,
-        tags: ['turbowarp', 'datamgmt'],
-        description: 'Create and edit .zip format files, including .sb3 files.',
-        twDeveloper: 'CST1229',
-        featured: true
-    },
+ 
     {
         name: 'Pen+',
         extensionId: 'https://extensions.penguinmod.com/extensions/ObviousAlexC/PenPlus.js',
@@ -550,6 +541,16 @@ const menuItems = [
         description: 'Apply visual effects to the entire stage.',
         extDeveloper: 'TheShovel',
         credits: 'SharkPool',
+        featured: true
+    },
+{
+        name: 'Zip',
+        extensionId: 'https://extensions.turbowarp.org/CST1229/zip.js',
+        iconURL: 'https://extensions.turbowarp.org/images/CST1229/zip.svg',
+        insetIconURL: turbowarpIcon,
+        tags: ['turbowarp', 'datamgmt'],
+        description: 'Create and edit .zip format files, including .sb3 files.',
+        twDeveloper: 'CST1229',
         featured: true
     },
     {
