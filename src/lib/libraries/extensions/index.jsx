@@ -210,6 +210,16 @@ const menuItems = [
         ),
         featured: true
     },
+           {
+            name: '3D',
+            extensionId: 'jg3d',
+            iconURL: jg3dExtensionIcon,
+            tags: ['penguinmod', '3d'],
+            customInsetColor: '#B200FF',
+            insetIconURL: jg3dInsetExtensionIcon,
+            description: 'Use the magic of 3D to spice up your project.',
+            featured: true
+        },
     {
         name: 'Animated Text',
         extensionId: 'text',
@@ -309,6 +319,26 @@ const menuItems = [
         featured: true
     },
     {
+            name: (
+                <FormattedMessage
+                    defaultMessage="OOP"
+                    description="Name of OOP extension"
+                    id="jwStructs.jwStructsExtension.name"
+                />
+            ),
+            extensionId: 'jwStructs',
+            tags: ['penguinmod'],
+            iconURL: jwStructsExtensionIcon,
+            description: (
+                <FormattedMessage
+                    defaultMessage="Removed from list. OOP blocks. OOp is a programming paradigm that uses objects and their interactions to design applications and computer programs."
+                    description="Description of OOP extension"
+                    id="jwStructs.jwStructsExtension.description"
+                />
+            ),
+            featured: true
+        },
+    {
         name: 'Stage Camera',
         extensionId: 'pmCamera',
         iconURL: pmCameraExtensionIcon,
@@ -323,6 +353,15 @@ const menuItems = [
         credits: 'Inspired by⠀⠀⠀⠀⠀⠀ DT-is-not-available',
         featured: true
     },
+ {
+        name: 'Legacy Files',
+        extensionId: 'jgFiles',
+        twDeveloper: 'GarboMuffin',
+        iconURL: https://ocon.ch/file.png,
+        tags: ['turbowarp', 'datamgmt'],
+        description: 'Basic blocks for files.',
+        featured: true
+    },   
     {
         name: 'Files',
         extensionId: 'twFiles',
@@ -570,15 +609,7 @@ const menuItems = [
         credits: 'TheShovel, showierdata9978, SharkPool',
         featured: true
     },
-    {
-        name: 'Font Manager',
-        extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Font-Manager.js',
-        iconURL: 'https://extensions.penguinmod.com/images/SharkPool/Font-Manager.svg',
-        tags: ['penguinmod', 'graphics'],
-        description: 'Manage, create, and delete fonts.',
-        credits: 'SharkPool, Ashimee',
-        featured: true
-    },
+   
     {
         name: 'Storage',
         extensionId: 'jgStorage',
@@ -798,7 +829,7 @@ const menuItems = [
         iconURL: sharkpoolPrintingIcon,
         description: 'Allows you to show a dialog for printing text, images, and custom HTML to a printer.',
         featured: true
-    },
+    },       
     {
         name: 'Clipping and Blending',
         extensionId: 'xeltallivclipblend',
@@ -1135,54 +1166,7 @@ Please keep these in livetests to reduce bug reports on your fork! :)
 */
 if (IsLocal || IsLiveTests) {
     const extras = [
-        {
-            name: (
-                <FormattedMessage
-                    defaultMessage="HTML Canvas"
-                    description="Name of Text extension"
-                    id="canvas.name"
-                />
-            ),
-            extensionId: 'newCanvas',
-            iconURL: canvasExtensionBanner,
-            tags: ['penguinmod'],
-            insetIconURL: canvasExtensionIcon,
-            customInsetColor: '#0094FF',
-            description: (
-                <FormattedMessage
-                    defaultMessage="Extra drawing tools using an HTML Canvas. Works well when used with other extensions."
-                    description="Description of Text extension"
-                    id="text.description"
-                />
-            ),
-            featured: true
-        },
-        {
-            name: 'OLD Canvas',
-            extensionId: 'canvas',
-            iconURL: canvasExtensionBanner,
-            tags: ['penguinmod'],
-            insetIconURL: canvasExtensionIcon,
-            customInsetColor: '#0094FF',
-            description: 'depracated version of HTML Canvas.',
-            featured: true
-        },
-        {
-            name: 'Legacy Files',
-            extensionId: 'jgFiles',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod', 'datamgmt'],
-            description: 'Basic blocks for files. This has been replaced by the TurboWarp files extension.',
-            featured: true
-        },
-        {
-            name: 'Clone Communication',
-            extensionId: 'jgClones',
-            iconURL: jgCloneManagerExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'Mainly sharing data between clones and the main sprite, but also some other small features. This has been replaced by the TurboWarp Clones+ extension.',
-            featured: true
-        },
+
         {
             name: 'Easy Save',
             extensionId: 'jgEasySave',
@@ -1210,58 +1194,7 @@ if (IsLocal || IsLiveTests) {
             description: 'Weird new blocks. Replaced by Sensing Expansion.',
             featured: true
         },
-        {
-            name: 'the doo doo extension',
-            extensionId: 'jgDooDoo',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod', 'joke'],
-            description: 'dr bob eae',
-            featured: true
-        },
-        {
-            name: 'Christmas',
-            extensionId: 'jgChristmas',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/christmas.png',
-            tags: ['penguinmod', 'joke'],
-            description: 'hooraye',
-            featured: true
-        },
-        {
-            name: 'an amazing extension',
-            extensionId: 'jgBestExtension',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epic.png',
-            internetConnectionRequired: true,
-            tags: ['penguinmod', 'joke'],
-            description: 'this is SUCH A GOOD EXTENSION USE IT NOW',
-            featured: true
-        },
-        {
-            name: 'Epic utilities',
-            extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/AprilFools.js',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epicutils.png',
-            tags: ['penguinmod', 'joke'],
-            description: 'the super good utilities brought to you by todays sponsor sharkpool (the epic utilities)',
-            featured: true
-        },
-        {
-            name: 'image blocks',
-            extensionId: 'https://extensions.penguinmod.com/extensions/Ashime/funneimageblocks.js',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/screenshot1.png',
-            tags: ['penguinmod', 'joke'],
-            internetConnectionRequired: true,
-            description: 'who needs cat blocks when you have penguin block',
-            extDeveloper: 'Ashimee, 0znzw, CST1229',
-            featured: true
-        },
-        {
-            name: 'fire in the hole',
-            extensionId: 'https://extensions.penguinmod.com/extensions/JeremyGamer13/FireInTheHole.js',
-            iconURL: 'https://library.penguinmod.com/files/emojis/cluelesssmile.png',
-            tags: ['penguinmod', 'joke'],
-            internetConnectionRequired: true,
-            description: 'april fools took too long man this joke is not funny anymore',
-            featured: true
-        },
+    
         {
             name: 'Unite',
             extensionId: 'jwUnite',
@@ -1270,15 +1203,7 @@ if (IsLocal || IsLiveTests) {
             description: 'Legacy extension that was eventually merged into the default toolbox.',
             featured: true
         },
-        {
-            name: 'XML',
-            extensionId: 'jwXml',
-            iconURL: jwXmlExtensionIcon,
-            tags: ['penguinmod', 'datamgmt'],
-            description: 'Enables the creation and getting of XML data. Not yet able to modify data.',
-            extDeveloper: 'jwklong',
-            featured: true
-        },
+       
         {
             name: 'Debugging',
             extensionId: 'jgDebugging',
@@ -1340,26 +1265,7 @@ if (IsLocal || IsLiveTests) {
             credits: 'Some features added from LilyMakesThings, CubesterYT, TheShovel',
             featured: true
         },
-        {
-            name: '3D',
-            extensionId: 'jg3d',
-            iconURL: jg3dExtensionIcon,
-            tags: ['penguinmod', '3d'],
-            customInsetColor: '#B200FF',
-            insetIconURL: jg3dInsetExtensionIcon,
-            description: 'Use the magic of 3D to spice up your project.',
-            featured: true
-        },
-        {
-            name: '3D Physics',
-            extensionId: 'fr3d',
-            iconURL: fr3dPhysicsExtensionIcon,
-            tags: ['penguinmod', '3d'],
-            customInsetColor: '#D066FE',
-            insetIconURL: fr3dPhysicsInsetExtensionIcon,
-            description: 'Physics for the 3D extension.',
-            featured: true
-        },
+
         {
             name: '3D Virtual Reality',
             extensionId: 'jg3dVr',
@@ -1367,7 +1273,7 @@ if (IsLocal || IsLiveTests) {
             tags: ['penguinmod', 'hardware', '3d'],
             customInsetColor: '#B200FF',
             insetIconURL: jg3dVrInsetExtensionIcon,
-            description: 'In development. May break compatibility. Allow players to really jump into your world!',
+            description: 'Allow players to really jump into your world!',
             featured: true
         },
         {
