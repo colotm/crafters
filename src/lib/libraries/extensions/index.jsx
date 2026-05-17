@@ -331,7 +331,7 @@ const menuItems = [
             iconURL: jwStructsExtensionIcon,
             description: (
                 <FormattedMessage
-                    defaultMessage="Removed from list. OOP blocks. OOp is a programming paradigm that uses objects and their interactions to design applications and computer programs."
+                    defaultMessage="OOP blocks. OOp is a programming paradigm that uses objects and their interactions to design applications and computer programs."
                     description="Description of OOP extension"
                     id="jwStructs.jwStructsExtension.description"
                 />
