@@ -13,4 +13,11 @@
 {
 [es]
 [des: ExtForge: Ext]
-}
+},
+{
+[es]
+[des: TurboBuilder: Build]
+},{
+[es]
+[des: KittenBot: BuildMaker]
+},
