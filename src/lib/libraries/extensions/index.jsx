@@ -357,7 +357,7 @@ const menuItems = [
         name: 'Legacy Files',
         extensionId: 'jgFiles',
         twDeveloper: 'GarboMuffin',
-        iconURL: https://ocon.ch/file.png,
+        iconURL: 'https://ocon.ch/file.png',
         tags: ['turbowarp', 'datamgmt'],
         description: 'Basic blocks for files.',
         featured: true
