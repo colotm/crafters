@@ -9,6 +9,12 @@ import musicInsetIconURL from './music/music-small.svg';
 import penIconURL from './pen/pen.png';
 import penInsetIconURL from './pen/pen-small.svg';
 
+import jg3dExtensionIcon from './penguinmod/extensions/3d.png';
+import jg3dInsetExtensionIcon from './penguinmod/extensions/3dicon.png';
+
+import animatedTextIconURL from './penguinmod/extensions/text extension.png';
+import animatedTextInsetIconURL from './penguinmod/extensions/text extension small.svg';
+
 import videoSensingIconURL from './videoSensing/video-sensing.png';
 import videoSensingInsetIconURL from './videoSensing/video-sensing-small.svg';
 
@@ -20,9 +26,6 @@ import translateInsetIconURL from './translate/translate-small.png';
 
 import makeymakeyIconURL from './makeymakey/makeymakey.png';
 import makeymakeyInsetIconURL from './makeymakey/makeymakey-small.svg';
-
-import animatedTextIconURL from './penguinmod/extensions/text extension.png';
-import animatedTextInsetIconURL from './penguinmod/extensions/text extension small.svg';
 
 import microbitIconURL from './microbit/microbit.png';
 import microbitInsetIconURL from './microbit/microbit-small.svg';
@@ -116,10 +119,6 @@ import jgPackagerApplicationsInsetExtensionIcon from './penguinmod/extensions/pa
 
 // import jgTweeningExtensionIcon from './penguinmod/extensions/tween.png';
 import jgsilvxrcatInterfacesExtensionIcon from './penguinmod/extensions/interfaces2.png';
-
-// 3D MAN WTF
-import jg3dExtensionIcon from './penguinmod/extensions/3d.png';
-import jg3dInsetExtensionIcon from './penguinmod/extensions/3dicon.png';
 import jg3dVrExtensionIcon from './penguinmod/extensions/3dVr.png';
 import jg3dVrInsetExtensionIcon from './penguinmod/extensions/3dVr_Inset.png';
 import fr3dPhysicsExtensionIcon from './penguinmod/extensions/3d_physics.png';
