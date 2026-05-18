@@ -583,15 +583,6 @@ const menuItems = [
     },
     {
         name: 'Temporary Variables',
-        extensionId: 'tempVars',
-        iconURL: gsaTempVariablesExtensionIcon,
-        tags: ['penguinmod'],
-        description: 'Create variables for use in one block stack. Useful to not clutter the variable list with variables you only use once.',
-        credits: 'LilyMakesThings',
-        featured: true
-    },
-    {
-        name: 'TurboWarp Temporary Variables',
         extensionId: 'lmsTempVars2',
         iconURL: lilyTempVariablesExtensionIcon,
         tags: ['turbowarp'],
@@ -652,39 +643,13 @@ const menuItems = [
     {
         name: 'Pang API',
         extensionId: 'https://extensions.penguinmod.com/extensions/SammerLOL/pangapi.js',
-        iconURL: 'https://extensions.penguinmod.com/images/SammerLOL/pangapi.png',
+        iconURL: 'https://extensions.penguinmod.com/images/SammerLOL/pangapi.avif',
         tags: ['penguinmod'],
         description: 'Fetch information from the PenguinMod API.',
         extDeveloper: 'oc9x97',
         featured: true
     },
-    {
-        name: '3D Math',
-        extensionId: 'https://extensions.penguinmod.com/extensions/ObviousAlexC/3DMath.js',
-        iconURL: 'https://extensions.penguinmod.com/images/ObviousAlexC/3DMath.svg',
-        tags: ['penguinmod', '3d', 'graphics'],
-        description: 'A handful of utilities for making your own sprite-based 3D engine.',
-        extDeveloper: 'pinksheep2917',
-        featured: true
-    },
-    {
-        name: 'Extra Mathematics',
-        extensionId: 'https://extensions.penguinmod.com/extensions/jwklong/mathematics.js',
-        iconURL: 'https://extensions.penguinmod.com/images/jwklong/mathematics.png',
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'Complicated maths extension for nerds.',
-        extDeveloper: 'jwklong',
-        featured: true
-    },
-    {
-        name: 'Random Utilities',
-        extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/random_utils.js',
-        iconURL: 'https://extensions.penguinmod.com/images/Gen1x/randomutils.png',
-        tags: ['penguinmod'],
-        description: 'Many blocks related to generating random values, including seed-based number generation, true number generation, UUID\'s, random strings, etc.',
-        extDeveloper: 'G1nX',
-        featured: true
-    },
+
     {
         name: 'LZ Compress',
         extensionId: 'shovellzcompresss',
@@ -702,50 +667,7 @@ const menuItems = [
         description: 'Blocks for specific use-cases or major convenience.',
         featured: true
     },
-    {
-        name: 'Odd Messages',
-        extensionId: 'oddMessage',
-        tags: ['penguinmod'],
-        iconURL: silvxrcatOddMessagesExtensionIcon,
-        description: 'For logging and variable utilization.',
-        featured: true,
-        extDeveloper: 'silvxrcat'
-    },
-    {
-        name: 'HTML iframe Elements',
-        extensionId: 'jgIframe',
-        iconURL: jgIframeExtensionIcon,
-        tags: ['penguinmod'],
-        description: 'Blocks to place and move around frames that contain HTML content or websites.',
-        featured: true,
-        internetConnectionRequired: true
-    },
-    {
-        name: 'Color Picker',
-        extensionId: 'shovelColorPicker',
-        iconURL: theshovelColorPickerIcon,
-        tags: ['penguinmod'],
-        description: 'Allow the user to choose a color using the built-in color picker, so you don\'t need to make your own.',
-        extDeveloper: 'TheShovel',
-        featured: true
-    },
-    {
-        name: 'Color Utility Blocks',
-        extensionId: 'colors',
-        iconURL: gsaColorUtilExtensionIcon,
-        tags: ['penguinmod'],
-        description: 'Converters for Hex, RGB, HSV and Decimal colors and other color related things.',
-        featured: true
-    },
-    {
-        name: 'All Menus',
-        extensionId: 'https://extensions.penguinmod.com/extensions/Lily/AllMenus.js',
-        iconURL: 'https://extensions.penguinmod.com/images/Lily/AllMenus.svg',
-        tags: ['penguinmod'],
-        description: 'Every dropdown menu for each block, in one extension.',
-        extDeveloper: 'LilyMakesThings',
-        featured: true
-    },
+
     {
         name: (
             <FormattedMessage
@@ -796,15 +718,14 @@ const menuItems = [
         extDeveloper: 'G1nX',
         featured: true
     },
-    {
-        name: 'McUtils',
-        extensionId: 'https://extensions.turbowarp.org/Lily/McUtils.js',
-        tags: ['turbowarp', 'joke'],
-        iconURL: 'https://extensions.turbowarp.org/images/Lily/McUtils.png',
-        insetIconURL: turbowarpIcon,
-        description: 'Basic utilities for any fast food employee',
+     {
+        name: 'Mc',
+        extensionId: 'mc',
+        iconURL: 'https://extensions.mc.o/mc.js',
+        tags: ['turbowarp', 'graphics'],
+        description: 'Clipolor mc.',
         featured: true,
-        twDeveloper: 'LilyMakesThings'
+        twDeveloper: 'Mc Utils'
     },
     {
         name: 'GamePad',
@@ -1203,7 +1124,16 @@ if (IsLocal || IsLiveTests) {
             description: 'Legacy extension that was eventually merged into the default toolbox.',
             featured: true
         },
-       
+         {
+        name: 'McUtils',
+        extensionId: 'https://extensions.turbowarp.org/Lily/McUtils.js',
+        tags: ['turbowarp', 'joke'],
+        iconURL: 'https://extensions.turbowarp.org/images/Lily/McUtils.png',
+        insetIconURL: turbowarpIcon,
+        description: 'Replaced by Mc Extension. Basic utilities for any fast food employee',
+        featured: true,
+        twDeveloper: 'LilyMakesThings'
+    },
         {
             name: 'Debugging',
             extensionId: 'jgDebugging',
@@ -1228,26 +1158,7 @@ if (IsLocal || IsLiveTests) {
             description: 'Opens the editor with this tab as the parent, still with the library opened. For developers.',
             featured: true
         },
-        {
-            name: (
-                <FormattedMessage
-                    defaultMessage="OOP"
-                    description="Name of OOP extension"
-                    id="jwStructs.jwStructsExtension.name"
-                />
-            ),
-            extensionId: 'jwStructs',
-            tags: ['penguinmod'],
-            iconURL: jwStructsExtensionIcon,
-            description: (
-                <FormattedMessage
-                    defaultMessage="Removed from list. OOP blocks. OOp is a programming paradigm that uses objects and their interactions to design applications and computer programs."
-                    description="Description of OOP extension"
-                    id="jwStructs.jwStructsExtension.description"
-                />
-            ),
-            featured: true
-        },
+       
         {
             name: 'PenguinMod Permissions',
             extensionId: 'JgPermissionBlocks',
