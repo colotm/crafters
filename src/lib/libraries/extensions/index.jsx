@@ -358,7 +358,7 @@ const menuItems = [
         extensionId: 'jgFiles',
         twDeveloper: 'GarboMuffin',
         iconURL: 'https://ocon.ch/file.png',
-        tags: ['turbowarp', 'datamgmt'],
+        tags: ['penguinmod', 'datamgmt'],
         description: 'Basic blocks for files.',
         featured: true
     },   
