@@ -30,6 +30,13 @@ const motion = function (isInitialSetup, isStage, targetId) {
                 </shadow>
             </value>
         </block>
+          <block type="motion_movebacksteps">
+            <value name="STEPS">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+        </block>
         <block type="motion_moveupdownsteps">
             <value name="STEPS">
                 <shadow type="math_number">
@@ -176,7 +183,8 @@ const motion = function (isInitialSetup, isStage, targetId) {
         ${blockSeparator}
         <block type="motion_setrotationstyle"/>
         <block type="motion_move_sprite_to_scene_side"/>
-        ${blockSeparator}
+        ${blockSeparator}     
+        <label text="Motion Variables"></label>
         <block id="${targetId}_xposition" type="motion_xposition"/>
         <block id="${targetId}_yposition" type="motion_yposition"/>
         <block id="${targetId}_direction" type="motion_direction"/>`}
@@ -203,6 +211,7 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
     return `
     <category name="%{BKY_CATEGORY_LOOKS}" id="looks" colour="#9966FF" secondaryColour="#774DCB">
         ${isStage ? '' : `
+      <label text="Speech"></label>
         <block type="looks_sayforsecs">
             <value name="MESSAGE">
                 <shadow type="text">
@@ -274,6 +283,7 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
         ${blockSeparator}
         `}
         ${isStage ? `
+              <label text="Backdrops"></label>
             <block type="looks_switchbackdropto">
                 <value name="BACKDROP">
                     <shadow type="looks_backdrops">
@@ -300,6 +310,7 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
                 </value>
             </block>
         ` : `
+              <label text="Costume\/Backdrops"></label>
             <block id="${targetId}_switchcostumeto" type="looks_switchcostumeto">
                 <value name="COSTUME">
                     <shadow type="looks_costume">
@@ -359,6 +370,7 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
             <block id="${targetId}_stretchGetY" type="looks_stretchGetY"></block>
         `}
         ${blockSeparator}
+              <label text="Effects"></label>
         <block type="looks_changeeffectby">
             <value name="CHANGE">
                 <shadow type="math_number">
