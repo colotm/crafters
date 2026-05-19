@@ -451,20 +451,12 @@ const menuItems = [
         description: 'More operators like nand, nor, character code to character, reading multiple lined text line by line, etc.',
         featured: true
     },
-    {
-        name: 'My Blocks+',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/My-Blocks-Plus.js',
-        iconURL: sharkpoolMBPIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'Create private or global custom blocks with custom inputs, colors, and more!',
-        extDeveloper: 'SharkPool, CST1229, 0znzw',
-        featured: true
-    },
+    
     {
         name: 'Better Comments',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Better-Comments.js',
-        iconURL: sharkpoolBCIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
+        iconURL: music,
+        tags: ['penguinmod'],
         description: 'Better Comments with Customization and Markdown support',
         extDeveloper: 'SharkPool',
         featured: true
@@ -478,11 +470,12 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Particle Engine',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Particle-Engine.js',
-        iconURL: sharkpoolPEIcon,
-        tags: ['penguinmod', 'graphics'],
-        description: 'Create powerful Particle Engines without Clones',
+        name: 'Clipboard',
+        extensionId: 'https://extensions.turbowarp.org/clipboard.js',
+        iconURL: 'https://extensions.turbowarp.org/images/clipboard.svg',
+        insetIconURL: turbowarpIcon,
+        tags: ['turbowarp'],
+        description: 'Read and write from the system clipboard.',
         extDeveloper: 'SharkPool',
         featured: true
     },
